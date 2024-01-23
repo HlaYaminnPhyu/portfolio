@@ -7,7 +7,7 @@
   justify-content: center;
   color: #ffffff;
   font-size: 2rem; 
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px #d95f5f;
   /* display: block; */
 
     /* height: 100px;
@@ -23,7 +23,7 @@
 
 .fade:hover .ico-circle{
   color: #fff;
-  box-shadow: 0 0 0 10px #cde1f8;
-  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #DD8469;
+  background-color: #d95f5f;
   transition: all 300ms ease-in-out;
 }

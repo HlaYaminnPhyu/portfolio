@@ -208,10 +208,10 @@ const App = () => {
       </div>
      
 
-      <div data-aos="zoom-out"
+      {/* <div data-aos="zoom-out"
       data-aos-duration="1000">
      <Blog/>
-      </div>
+      </div> */}
 
      
 

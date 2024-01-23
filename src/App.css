@@ -2,11 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 344e41
+3a5a40
+588157
+a3b18a
+dad7cd
+
+
+#D9643C
+#68636A
+#797A87
+#B8B5C6
+#040304
+#E6E2F0
+
+
+
+#798F66
+#52683F
+#131C0D
+#D4DCD1
+#204C13
+#B8C0B5
+*/
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #ededed;
+    background: #040304;
+    
+
+    /* background-image: url('./img/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed; */
 /* styles.css */
 }
 /* Link styles */
@@ -90,7 +121,7 @@ body{
 }
 
 .hero-bg{
-    background-image: url('./img/hero-bg.jpg');
+    background-image: url('./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
@@ -122,5 +153,43 @@ body{
 }
 
 .custom-shadow{
-    box-shadow: .3px .3px 6px 1px rgb(207, 206, 206);
+    box-shadow: .3px .3px 6px 2px rgb(207, 206, 206);
+}
+
+
+.skill{
+  width:160px;
+  height:160px;
+  /* background-color: aliceblue; */
+  position:relative;
+}
+.outer{
+  height:160px;
+  width: 160px;
+  border-radius: 50%;
+  /* border:1px solid white; */
+  padding: 20px;
+  /* box-shadow: 6px 6px 1px white, -6px -6px -1px gray; */
+  /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 1); */
+  box-shadow:6px 6px 10px -1px rgba(0, 0, 0, 0.15),-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+.inner{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* border:1px solid white; */
+  /* display:flex;
+  align-items: center;
+  justify-content: center; */
+  box-shadow:inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+  -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+  0.5px 0.5px 0px rgba(0, 0, 0, 0.15)
+  0px 12px 10px -10px rgba(0, 0, 0, 0.05)
+  ;
+}
+
+#num{
+  font-weight: 600px;
+  color:#d95f5f;
 }

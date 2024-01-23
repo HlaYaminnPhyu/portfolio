@@ -15,7 +15,7 @@ const TypingEffect = () => {
 
   return (
     <div>
-        <span ref={el} className=' hero-h-2 text-white'></span>
+        <span ref={el} className=' hero-h-2 text-[#D9643C]'></span>
     </div>
   )
 }

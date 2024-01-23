@@ -10,8 +10,8 @@ const Work = () => {
   return (
     <div id="work">
       <section className=" flex flex-col justify-center items-center mb-16 sm:p-5">
-        <h1 className=" text-3xl lg:text-5xl font-bold uppercase mb-3">Portfolio</h1>
-        <p className=" text-[#4e4e4e] mb-4 text-center">
+        <h1 className=" text-3xl lg:text-5xl font-bold text-[#D9643C] uppercase mb-3">Portfolio</h1>
+        <p className=" text-[#B8B5C6] mb-4 text-center">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
         <div className=" w-[40px] h-[5px] bg-portfolio-fill">
@@ -148,6 +148,7 @@ const Work = () => {
       </section>
       <section className="h-screen md:h-[800px] lg:h-screen relative p-[1rem] md:p-[1rem] lg:p-[8rem] bg-[url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center">
         <div className=" absolute top-0 left-0 bg-portfolio-fill p-0 h-[100%] w-[100%] opacity-[0.7]"></div>
+        
       <Swiper spaceBetween={30}
         centeredSlides={true}
         autoplay={{

@@ -15,9 +15,9 @@ const Navbar = () => {
   ]
   return (
        <nav className={`${open ? "bg-[#040404]" : "bg-[#464646] h-screen"}`}>
-         <div className="container px-1 py-2 lg:p-4 lg:pt-5 md:mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between font-bold">
+         <div className="w-full px-1 py-2 lg:p-4 lg:pt-5 md:mx-auto flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:justify-between font-bold fixed bg-black z-20">
            <div className="flex items-center justify-between px-2 lg:px-0">
-           <h1 className={`${open ? "text-white" : "text-[#5f5f5f]"} ml-0 lg:ml-14 text-[28px]`}>DevFolio</h1>
+           <h1 className={`${open ? "text-[#D9643C]" : "text-[#D9643C]"} ml-0 lg:ml-14 text-[28px]`}>DevFolio</h1>
             <div onClick={()=>setOpen(!open)} className="lg:hidden text-white">
             {
               open ? <MdMenu className='text-3xl'/> : <MdClose className='text-3xl'/>
@@ -25,7 +25,7 @@ const Navbar = () => {
 
             </div>
            </div>
-            <ul className="text-black lg:text-white mr-0 lg:mr-14 lg:flex lg:py-0 lg:static lg:space-x-9 hidden">
+            <ul className="text-black lg:text-[#D9643C] mr-0 lg:mr-14 lg:flex lg:py-0 lg:static lg:space-x-9 hidden">
             {
                   menuLinks.map(item => (
                     <Link key={item.id} to={item.link} className={`lg:text-[15px] a py-3 lg:py-0 px-5 lg:px-0 font-semibold text-md duration-300 transition-all`}>
@@ -34,7 +34,7 @@ const Navbar = () => {
                   ))
             }
             </ul>
-            <ul className={`text-black lg:text-white mr-0 lg:mr-14 flex flex-col lg:flex-row absolute top-12 right-4 left-4 bottom-4 py-3 lg:py-0 lg:static lg:space-x-9 transition-all duration-300 ${open ? "hidden" : "block bg-white lg:bg-transparent"}`}>
+            <ul className={`text-black lg:text-white mr-0 lg:mr-14 flex flex-col lg:flex-row absolute top-12 right-4 left-4 bottom-4 py-3 lg:py-0 lg:static lg:space-x-9 transition-all duration-300 ${open ? "hidden" : "block lg:bg-transparent"}`}>
               {
                 menuLinks.map(item => (
                   <Link key={item.id} to={item.link} className={`${location.pathname === item.link ? "text-[#0078ff]" : "hover:text-[#0078ff]"} lg:text-[15px] py-3 lg:py-0 px-5 lg:px-0 font-semibold text-md duration-300 transition-all `}>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </ul>
 
         </div>
-       </nav>
+      </nav>
   )
 }
 
